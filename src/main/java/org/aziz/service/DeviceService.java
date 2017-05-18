@@ -4,8 +4,8 @@ import org.aziz.model.Brand;
 import org.aziz.model.Device;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
-import java.util.stream.Stream;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by aziz on 5/12/17.
@@ -17,6 +17,7 @@ public class DeviceService implements AppService<Device> {
     public DeviceService() {
 
     }
+/*
 
     List<Device> getDevicesByType(Brand brand) {
         return null;
@@ -25,6 +26,7 @@ public class DeviceService implements AppService<Device> {
     List<Device> getDevicesByModelYear(int year) {
         return null;
     }
+*/
 
     @Override
     public List<Device> getAll() {
@@ -56,11 +58,11 @@ public class DeviceService implements AppService<Device> {
         List<Device> devices;
 
         devices = Arrays.asList(
-                new Device(Brand.Apple, "iPhone 8", 2017),
-                new Device(Brand.Apple, "iPhone 8 Plus", 2017),
-                new Device(Brand.Apple, "iPhone 7", 2016),
-                new Device(Brand.Samsung, "Galaxy S8", 2017),
-                new Device(Brand.Samsung, "Galaxy S7", 2016));
+                new Device(Brand.APPLE, "iPhone 8", 2017),
+                new Device(Brand.APPLE, "iPhone 8 Plus", 2017),
+                new Device(Brand.APPLE, "iPhone 7", 2016),
+                new Device(Brand.SAMSUNG, "Galaxy S8", 2017),
+                new Device(Brand.SAMSUNG, "Galaxy S7", 2016));
         return devices;
     }
 }

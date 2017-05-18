@@ -3,7 +3,6 @@ package org.aziz.rest;
 import org.aziz.model.Device;
 import org.aziz.service.DeviceService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

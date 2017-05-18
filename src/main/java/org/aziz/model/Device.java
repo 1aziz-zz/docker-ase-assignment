@@ -1,7 +1,5 @@
 package org.aziz.model;
 
-import java.util.Objects;
-
 /**
  * Created by aziz on 5/12/17.
  */
@@ -27,16 +25,4 @@ public class Device {
     public int getModelYear() {
         return modelYear;
     }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || o.getClass() != getClass()) return false;
-        Device device;
-        device = (Device) o;
-        return modelYear == device.modelYear &&
-                deviceBrand == device.deviceBrand &&
-                Objects.equals(title, device.title);
-    }
-
 }

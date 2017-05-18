@@ -1,6 +1,5 @@
 package org.aziz;
 
-import org.aziz.model.Device;
 import org.aziz.service.DeviceService;
 import org.junit.Test;
 
